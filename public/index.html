@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles.css">
 
   <!-- web manifest link -->
-  <link rel="manifest" hred="manifest.webmanifest"/>
+  <link rel="manifest" href="manifest.webmanifest"/>
 
   <title>Budget Tracker</title>
 </head>
@@ -52,7 +52,7 @@
         navigator.serviceWorker
           .register('service-worker.js')
           .then(reg => console.log('We found your Service Worker!', reg))
-          .catch(err => console.log('Service Worker registration failed. Sorry! ', err))
+          .catch(error => console.log('Service Worker registration failed. Sorry! ', error))
       );
     }
   </script>
